@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #1a1a1a;
+  color: #00ffcc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  flex: 1;
+  max-width: 100%; /* Ensure no horizontal overflow */
+}
+
+.title {
+  font-size: 3rem; /* Standard size for larger screens */
+  color: #00ffcc;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  padding-bottom: 40px;
+}
+
+.single-node {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+/* Pixelated Button (Node) Styling */
+.node {
+  background-color: #282828;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 0; /* Pixel-like hard corners */
+  border: 5px ridge #00ffcc; /* Thicker border for pixel effect */
+  font-size: 1.2rem; /* More standard size for larger screens */
+  transition: transform 0.2s, box-shadow 0.3s ease-in-out;
+  letter-spacing: 2px; /* Spacing for that retro text feel */
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.spotify {
+  border-color: #1DB954;
+  box-shadow: 0 0 5px #1DB954, 0 0 30px #1DB954;
+}
+
+.instagram {
+  border-color: #E1306C;
+  box-shadow: 0 0 5px #E1306C, 0 0 30px #E1306C;
+}
+
+.snapchat {
+  border-color: #FFFC00;
+  box-shadow: 0 0 5px #FFFC00, 0 0 30px #FFFC00
+}
+
+/* General Hover Effect - Applied to All Buttons */
+.node:hover {
+  transform: scale(1.1);
+}
+
+/* Individual Hover Effects */
+.spotify:hover {
+  box-shadow: 0 0 20px #1DB954, 0 0 30px #1DB954; /* Spotify green glow */
+}
+
+.instagram:hover {
+  box-shadow: 0 0 20px #E1306C, 0 0 30px #E1306C; /* Instagram pink glow */
+}
+
+.snapchat:hover {
+  box-shadow: 0 0 20px #FFFC00, 0 0 30px #FFFC00; /* Snapchat yellow glow */
+}
+
+/* General Active Effect - Applied to All Buttons */
+.node:active {
+  transform: scale(0.55);
+}
+
+/* Individual Active Effects */
+.spotify:active {
+  box-shadow: 0 0 5px #1DB954; /* Spotify green shadow on click */
+}
+
+.instagram:active {
+  box-shadow: 0 0 5px #E1306C; /* Instagram pink shadow on click */
+}
+
+.snapchat:active {
+  box-shadow: 0 0 5px #FFFC00; /* Snapchat yellow shadow on click */
+}
+
+.spotify-embed iframe {
+  width: 70%; /* Default width for larger screens */
+  height: 600px;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+}
+
+/* Footer Styling */
+footer {
+  color: #888;
+  font-size: 0.9rem; /* Standard size for larger screens */
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Courier New', Courier, monospace; /* Keeps retro feel for footer */
+}
+
+/* Media Queries for Mobile (Small Screens) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 8vw; /* Use viewport width for mobile */
+  }
+
+  .node {
+    font-size: 4.5vw; /* Use viewport width for mobile */
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+  }
+
+  footer {
+    font-size: 3vw; /* Adjust footer size for smaller screens */
+  }
+  
+  .spotify-embed iframe {
+    width: 100%; /* Make the iframe full-width on smaller screens */
+    height: 360px;
+  }
+}
+
+
