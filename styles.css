@@ -59,9 +59,14 @@ body {
   box-shadow: 0 0 5px #E1306C, 0 0 30px #E1306C;
 }
 
-.snapchat {
+.github {
   border-color: #FFFC00;
   box-shadow: 0 0 5px #FFFC00, 0 0 30px #FFFC00
+}
+
+.linkedin {
+  border-color: #0077b5; /* LinkedIn blue color */
+  box-shadow: 0 0 5px #0077b5, 0 0 30px #0077b5;
 }
 
 /* General Hover Effect - Applied to All Buttons */
@@ -78,8 +83,12 @@ body {
   box-shadow: 0 0 20px #E1306C, 0 0 30px #E1306C; /* Instagram pink glow */
 }
 
-.snapchat:hover {
-  box-shadow: 0 0 20px #FFFC00, 0 0 30px #FFFC00; /* Snapchat yellow glow */
+.gihub:hover {
+  box-shadow: 0 0 20px #FFFC00, 0 0 30px #FFFC00; /* github yellow glow */
+}
+
+.linkedin:hover {
+  box-shadow: 0 0 20px #0077b5, 0 0 30px #0077b5; /* LinkedIn blue glow */
 }
 
 /* General Active Effect - Applied to All Buttons */
@@ -96,8 +105,12 @@ body {
   box-shadow: 0 0 5px #E1306C; /* Instagram pink shadow on click */
 }
 
-.snapchat:active {
-  box-shadow: 0 0 5px #FFFC00; /* Snapchat yellow shadow on click */
+.github:active {
+  box-shadow: 0 0 5px #FFFC00; /* github yellow shadow on click */
+}
+
+.linkedin:active {
+  box-shadow: 0 0 5px #0077b5; /* LinkedIn blue shadow on click */
 }
 
 .spotify-embed iframe {
